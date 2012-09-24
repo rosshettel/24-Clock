@@ -8,4 +8,4 @@ let hourNum=10#`date "+%H"`
 
 #echo $DIRECTORY/$hourNum
 
-afplay $DIRECTORY/$hourNum.mp3
+afplay $DIRECTORY/sounds/$hourNum.mp3

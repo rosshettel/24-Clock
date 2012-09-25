@@ -1,7 +1,7 @@
 24 Clock
 ========
 
-Inspired by a coworker harmlessly asking one day, "Hey, could you make my the hourly chime in OS X sound like the opening to the TV show 24?"
+Inspired by a coworker harmlessly asking one day, "Hey, could you make my hourly chime in OS X sound like the opening to the TV show 24?"
 
 And also, because everyone needs a bit more dramatic narration in their life.
 
@@ -9,19 +9,21 @@ And also, because everyone needs a bit more dramatic narration in their life.
 
 Note that this means it will make noise for ALL of the 24 hours in a day, so don't put this in a place where you sleep. It does, however, make a great interruption for any late night parties that tend to happen.
 
+Compatailibity
+--------------
+
+Since **24 Clock** uses cron to run on each hour, this means it is Linux and Mac friendly. Sorry Windows people.
+
 
 Installation
 ------------
 
-Installation is as simple as making a new cron entry (which means **24 Clock** is both Linux and Mac friendly. Sorry Windows people).
+Installation is as easy as running a script from your terminal. When you download or clone the project, open a terminal window and navigate to the project folder.
 
-From the command line, run `crontab -e`
+From there, simply run the command `./install.sh`.
 
-That will open up vi (or whichever editor is your default). Enter a line similar to the one below:
+This will copy the project files to the directory `~/Library/Scripts/24Clock`. If you want to install it somewhere else, you can edit the path in the install.sh file.
 
-`0 * * * * /Library/Scripts/24sounds/24time.sh`
+Once the files are copied over, the script adds the cron entry, and then plays the hourly message once to make sure everything works before exiting. 
 
-Make sure to include the actual path to wherever you placed your script.
-
-
-*This will be made into a installer script soon*
+After the install scripts runs, you may delete the original project folder.

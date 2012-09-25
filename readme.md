@@ -12,7 +12,9 @@ Note that this means it will make noise for ALL of the 24 hours in a day, so don
 Compatailibity
 --------------
 
-Since **24 Clock** uses cron to run on each hour, this means it is Linux and Mac friendly. Sorry Windows people.
+Since **24 Clock** uses cron to run on each hour, this means it is ~~Linux and~~ Mac friendly. Sorry Windows people.
+
+*afplay is Mac specific, so this is Mac only for now while I find a suitable alternative*
 
 
 Installation

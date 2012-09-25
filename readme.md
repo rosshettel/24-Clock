@@ -12,9 +12,9 @@ Note that this means it will make noise for ALL of the 24 hours in a day, so don
 Compatailibity
 --------------
 
-Since **24 Clock** uses cron to run on each hour, this means it is ~~Linux and~~ Mac friendly. Sorry Windows people.
+Since **24 Clock** uses cron to run on each hour, this means it is Linux and Mac friendly. Sorry Windows people.
 
-*afplay is Mac specific, so this is Mac only for now while I find a suitable alternative*
+*Since Linux doesn't have `afplay`, the script uses `mpg123` instead, either make sure you have that installed or change it to whichever player you have. The Linux side of things are untested. Thanks to [criswell](http://www.reddit.com/r/commandline/comments/10gksa/my_hourly_chime_script_that_plays_the_following/c6dawjf?context=2).*
 
 
 Installation
